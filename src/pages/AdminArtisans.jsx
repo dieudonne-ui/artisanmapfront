@@ -18,7 +18,7 @@ const AdminArtisans = () => {
     }
   };
 
-  const handleDelete = async (id) => {
+  /*const handleDelete = async (id) => {
     if (!window.confirm('Confirmer la suppression ?')) return;
     try {
       await axios.delete(`https://artisanmap.onrender.com/api/artisans/${id}`, {
@@ -28,7 +28,7 @@ const AdminArtisans = () => {
     } catch (err) {
       console.error('Erreur de suppression', err);
     }
-  };
+  };*/
 
   useEffect(() => {
     fetchArtisans();
@@ -49,9 +49,7 @@ const AdminArtisans = () => {
                 <button className="btn btn-warning btn-sm" onClick={() => navigate(`/edit-artisan/${artisan._id}`)}>
                   Modifier
                 </button>
-                <button className="btn btn-danger btn-sm" onClick={() => handleDelete(artisan._id)}>
-                  Supprimer
-                </button>
+                
                 
               </div>
             </div>

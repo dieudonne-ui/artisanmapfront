@@ -9,7 +9,7 @@ const Artisans = () => {
  const fetchArtisans = async () => {
  try {
  const res = await axios.get('https://artisanmap.onrender.com/api/artisans');
- console.log(res.data)
+ 
  setArtisans(res.data);
  } catch (error) {
  console.error('Erreur lors de la récupération des artisans');

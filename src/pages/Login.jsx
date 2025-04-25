@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import loginBg from '../assets/login-bg.jpg'; // ✅ Image d’arrière-plan
+import loginBg from '../assets/login-bg.jpg';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -25,7 +25,7 @@ const Login = () => {
     try {
       const res = await axios.post('https://artisanmap.onrender.com/api/auth/login', form);
       localStorage.setItem('token', res.data.token);
-      setSuccess('Connexion réussie ! Redirection vers votre profil...');
+      setSuccess('Connexion réussie !...');
       setTimeout(() => {
         navigate('/admin/artisans');
       }, 2000);

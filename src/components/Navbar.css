@@ -1,0 +1,15 @@
+.nav-item-link {
+    color: white !important;
+    margin-left: 10px;
+    transition: color 0.3s;
+  }
+  
+  .nav-item-link:hover {
+    color: #ffc107 !important; /* jaune/orange au survol */
+  }
+  
+  .nav-item-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #ffc107;
+  }
+  

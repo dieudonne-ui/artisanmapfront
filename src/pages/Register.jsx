@@ -30,7 +30,7 @@ const Register = () => {
 
     try {
       await axios.post('https://artisanmap.onrender.com/api/auth/register', form);
-      setSuccess('Compte créé avec succès ! Redirection vers la page de connexion...');
+      setSuccess('Compte créé avec succès !...');
       setTimeout(() => {
         navigate('/connexion');
       }, 2000);
@@ -62,7 +62,7 @@ const Register = () => {
           left: 0,
           right: 0,
           bottom: 0,
-          backgroundColor: 'rgba(0, 0, 0, 0.5)', // ✅ Opacité sombre
+          backgroundColor: 'rgba(0, 0, 0, 0.5)', 
           zIndex: 1,
         }}
       ></div>

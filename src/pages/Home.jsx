@@ -72,7 +72,7 @@ const Home = () => {
               <div className="card-body">
                 <h5 className="card-title">ABDOUL TOKO </h5>
                 <p className="card-text">  <h4>Forgeron</h4> <br />Spécialiste du travail du métal, le forgeron façonne le fer pour créer ou réparer des outils, grilles, portails, ou objets décoratifs. Un métier de force et de précision, transmis de génération en génération</p>
-                <Link to="./artisans"  className="btn btn-outline-primary">Voir plus</Link>
+           
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@ const Home = () => {
               <div className="card-body">
                 <h5 className="card-title">AROUNA Baboni</h5>
                 <p className="card-text">  <h4>Potier</h4> <br />Artisan de la terre, le potier façonne l’argile avec ses mains pour créer des objets du quotidien ou décoratifs : marmites, vases, jarres, plats traditionnels… Son savoir-faire ancestral allie créativité et utilité. </p>
-                <Link to="./artisans" className="btn btn-outline-primary">Voir plus</Link>
+               
               </div>
             </div>
           </div>
@@ -93,11 +93,12 @@ const Home = () => {
                 <h5 className="card-title">BACHABI MAROUANE</h5>
                 <p className="card-text"> <h4>Soudeur</h4> <br />Maître du feu et du métal, le soudeur assemble des pièces en acier, aluminium ou fer grâce à la chaleur. Il travaille sur des portails, des grilles, des structures métalliques ou des réparations diverses
                 </p>
-                <Link to="./artisans"  className="btn btn-outline-primary">Voir plus</Link>
+              
               </div>
             </div>
           </div>
         </div>
+        <Link to="./artisans"  className="btn btn-outline-primary">Voir plus</Link>
       </section>
 
      
